@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../css/portfolio.css">
+    <title>My Portfolio</title>
+</head>
+
+<body>
+    <div class="background" >
+        <div class="circles">
+           <div></div>
+           <div></div>
+           <div></div>
+           <div></div>
+           <div></div>
+           <div></div>
+           <div></div>
+           <div></div>
+           <div></div>
+           <div></div>
+        </div>
+    </div >
+    <div class="main-content">
+        <header>
+            <h1 class="word-logo">Tony<span>Stark</span></h1>
+            <nav>
+                <div id="navigation">
+                    <input type="checkbox" />
+                    <svg class="menu-button" fill="white" viewBox="0 0 100 80" width="40" height="40">
+                        <rect width="100" height="20"></rect>
+                        <rect y="30" width="100" height="20"></rect>
+                        <rect y="60" width="100" height="20"></rect>
+                    </svg>
+                    <img src="../images/close-button.svg" alt="exit-button" class="exit-menu">
+                    
+                    <ul>
+                        <li><a href="../index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="education.html">Education</a></li>
+                        <li><a href="experience.html">Experience</a></li>
+                        <li><a href="#" class="current">Portfolio</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+
+        <main class="portfolio">
+
+            <h1 id="heading">My Projects</h1>
+            <section class="project">
+                <div class="left-col">
+                    <div class="container">
+                        <img src="../images/label_blue.svg" alt="bullet-1" class="bullet">
+                        <h3>1.</h3>
+                        <h2>Baltazar</h2>
+                    </div>
+                    <p>Baltazar is a 3D graphics-engine implemented with C++ using the OpenGL framework. The engine renders 3D objects with full lighting effects modeled using Phong lighting model
+                        and it also supports a full 360 degree camera/view with both orthographic and perspective view.
+                    </p>
+                    <button class="button">View Details</button>
+
+                </div>
+                <aside>
+                    <img src="../images/Baltazar.svg" alt="Baltazar-game-engine" class="project-pic">
+                </aside>
+
+            </section>
+            <section class="project">
+                <div class="left-col">
+                    <div class="container">
+                        <img src="../images/label_dark.svg" alt="bullet-2" class="bullet">
+                        <h3>2.</h3>
+                        <h2>2048</h2>
+                    </div>
+                    
+                    <p>This is a game that is implemented from scratch with python without importing any other external module
+                        . It is scalable meaning it can be played on any nxn grid.
+                    </p>
+                    <button class="button">View Details</button>
+
+                </div>
+                <aside>
+                    <img src="../images/2048.svg" alt="2048-game" class="project-pic">
+                </aside>
+
+
+
+            </section>
+            <section class="project">
+                <div class="left-col">
+                    <div class="container">
+                        <img src="../images/label_blue.svg" alt="bullet-3" class="bullet">
+                        <h3>3.</h3>
+                        <h2>EncryptMe</h2>
+                    </div>
+                    <p>EncryptMe is a 64-bit encryting application. This application uses RSA encrypting algorithm to encrypt and secure text files. 
+                        It is implemented from scratch using python</p>
+                    <button class="button">View Details</button>
+
+                </div>
+                <aside>
+                    <img src="../images/encryption.svg" alt="RSA-encryption" class="project-pic">
+                </aside>
+
+
+            </section>
+            <section class="project">
+                <div class="left-col">
+                    <div class="container">
+                        <img src="../images/label_dark.svg" alt="bullet-4" class="bullet">
+                        <h3>4.</h3>
+                        <h2>MTparser</h2>
+                    </div>
+                    <p>MTparser is an application that parses any mathematical expressions. It takes a mathematical expression in string form and evalutes the output to a given value. The application supports polynomial functions, transcedental functions as well as the most common mathematical functions.</p>
+                    <button class="button">View Details</button>
+
+                </div>
+                <aside>
+                    <img src="../images/parser.jpg" width="380" height="264" alt="first-project" class="project-pic">
+                </aside>
+            </section>
+
+        </main>
+
+
+        <footer>
+            <div class="container">
+
+                <div class="contacts">
+                    <p>Contact me:</p>
+                    <img src="../images/facebook.svg" alt="facebook" class="logo">
+                    <img src="../images/twitter.svg" alt="twitter" class="logo">
+                    <img src="../images/linkedin.svg" alt="linkedin" class="logo">
+                    <img src="../images/instagram.svg" alt="instagram" class="logo">
+
+                </div>
+                <p id="copyright">Copyright © 2021 amhaKindu</p>
+                <img src="../images/footer.svg" alt="footer-bgd" class="footer-img">
+            </div>
+
+        </footer>
+    </div>
+</body>
+
+</html>
