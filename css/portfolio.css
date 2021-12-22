@@ -1,0 +1,156 @@
+/* Portfolio page style rules*/
+main.portfolio{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+main.portfolio .project:nth-child(odd) .left-col .button{
+background-color: var(--secondary-color);
+}
+main.portfolio .project:nth-child(even) .left-col .button{
+    background-color: var(--primary-color);
+    color: black;
+}
+main.portfolio .project {
+    display: flex;
+    position: relative;
+    background-color: rgba(255, 255, 255, 0.1);
+    margin: 2vw;
+    height: 50vw;
+    font-size: 2vw;
+    border-radius: 2em;   
+}
+
+
+main.portfolio #heading {
+    text-align: center;
+    font-size: 6vw;
+}
+
+main.portfolio .project .left-col {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 20em;
+    
+}
+
+main.portfolio .project .left-col .decor {
+    position: absolute;
+    top: -5em;
+    left: 0;
+    width: 23em;
+}
+
+main.portfolio .project .left-col .container {
+    display: flex;
+    padding-top: 3em;
+    position: relative;
+}
+
+.project .left-col .container .bullet {
+    width: 10vw;
+    padding-left: 2em;
+}
+.project .left-col .container h3{
+    position: absolute;
+    left: 6vw;
+    top: 7vw;
+    color: white;
+}
+
+
+main.portfolio .project .left-col .container h2 {
+    padding-left: 1.5em;
+}
+
+main.portfolio .project .left-col p {
+    padding-left: 3em;
+    text-align: left;
+}
+
+main.portfolio .project .left-col .button{
+    color: white;
+    font-size: 0.7em;
+    width: 9em;
+    height: 2em;
+    border-radius: 1em;
+    margin-top: 2em;
+    margin-left: 2em;
+    background-color: var(--secondary-color);
+}
+
+main.portfolio .project aside{
+    float:right;
+    width: 20em;
+}
+
+main.portfolio .project .decor {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    margin-top: 7em;
+    width: 20em;
+}
+
+main.portfolio .project aside .project-pic {
+    height: 18em;
+    width: 15em;
+    float: right;
+    margin-left: 4em;
+    margin-right: 2em;
+    margin-top: 5em;
+}
+
+@media screen and (max-width: 480px) {
+    main.portfolio{
+        margin-top: 2vw;
+    }
+    main.portfolio #heading {
+        font-size: 8vw;
+    }
+    main.portfolio {
+        width: 100vw;
+        height: auto;
+    }
+
+    main.portfolio .project .left-col .container h2 {
+        padding-left: 1.5em;
+        font-size: 6vw;
+    }
+    .project .left-col .container h3{
+        left: 6vw;
+        top: 12vw;
+    }
+    main.portfolio .project .left-col p {
+        padding: 0vw 5vw;
+        font-size: 4vw;
+        margin-top: 0;
+    }
+
+    main.portfolio .project {
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        text-align: center;
+        height: auto;
+        width: 80vw;
+        height: 70vh;
+    }
+    main.portfolio .project .left-col{
+        width: 80vw;
+        text-align: center;
+        align-items: center;
+    }
+    main.portfolio .project aside .project-pic {
+        margin-top: 0;
+        margin-bottom: 20vw;
+    }
+    
+    main.portfolio .project .left-col .button{
+        position: absolute;
+        bottom: 4em;
+        font-size: 1.8vw;
+    }
+}

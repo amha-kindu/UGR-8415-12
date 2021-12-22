@@ -1,0 +1,257 @@
+
+
+/* contact page style rules*/
+main.contact .contact-section{
+    display:flex;
+    text-align:center;
+    justify-content:space-between;
+    font-size:2vw;
+    margin: 2vw;
+    width: 80vw;
+}
+
+main.contact .contact-section .left-col{
+    display: flex;
+    flex-direction:column;
+    align-items:center;
+    width:140em;
+    background-color: rgba(255, 255, 255, 0.1);
+    margin: 2vw 2vw;
+    border-radius: 2vw 2vw;
+}
+.left-col form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.left-col form span{
+    display: flex;
+    flex-direction: column;
+    width: 20em;
+    position: relative;
+    margin-left: 15vw;
+}
+.left-col form label{
+    position: absolute;
+    padding-left: 3em;
+    padding-top: 1.5em;
+    left: 0;
+}
+main.contact .contact-section .left-col input{
+    display: block;
+    margin:0.5em 1em;
+    width:30vw;
+    height:3vw;
+    font:2em;
+    border-radius:0.8em 0.8em;
+    border: 0.2em solid var(--primary-color);
+    box-shadow: 2px -2px 2px 1px var(--secondary-color);
+}
+input[type="text"], input[type="email"],textarea
+{
+    font-size:0.5em;
+    color: #69727a;
+}
+label[for="message"]
+{
+    padding-top: 20em;
+}
+label{
+    margin-left: -10em;
+    font-size: 0.5em;
+}
+main.contact .contact-section .left-col textarea{
+    height:20vw;
+    width:30vw;
+    margin-left: 0.8em;
+    margin-top: 1em;
+    border-radius:0.8em 0.8em;
+    border: 0.2em solid var(--primary-color);
+    box-shadow: 2px -2px 2px 1px var(--secondary-color);
+}
+
+main.contact .contact-section .left-col input#send-button{
+    width: 10em;
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    font-weight:bold;
+    font-size:0.5em;
+    margin-top: 2em;
+    margin-left: -12em;
+}
+main.contact .contact-section .right-col{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    
+    margin-right:4em;
+    width:20em;
+    padding-top: 1.8em;
+    margin-bottom: -5em;
+    background-color: rgba(255, 255, 255, 0.1);
+    margin: 2vw 2vw;
+    border-radius: 2vw 2vw;
+    
+}
+main.contact .contact-section .right-col .contact-info div{
+    display:flex;
+    justify-content: pack;
+    margin-top:1.5em;
+    align-items:center;
+    border-radius:2em;
+    height: 5em;
+    width: 5em;
+    color: rgba(255, 255, 255, 0);
+    background-color:var(--secondary-color);
+    box-shadow: 2px -2px 2px 1px var(--primary-color);
+}
+main.contact .contact-section .right-col .contact-info div:hover{
+    width: 20em;
+    color: white;
+}
+
+main.contact .contact-section .right-col .contact-info{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    font-size:0.5em;
+}
+
+main.contact .contact-section .right-col .social-media figure{
+    display:flex;
+    justify-content: space-evenly;
+    padding:1em 0;
+    width: 15em;
+    gap: 0.2em;
+    margin:2.5em 1.1em;
+    border-top:0.2em solid var(--secondary-color);
+    border-bottom:0.2em solid var(--secondary-color);
+    
+}
+main.contact .contact-section .right-col .social-media .logo{
+    margin:0;
+    width:2em;
+    height:2em;
+    padding:0.6em;
+    background-color: rgba(255, 255, 255);
+    border-radius: 100%;
+}
+main.contact .contact-section .right-col .contact-info div .logo{
+    width:3vw;
+    height: 3vw;
+    float: right;
+    border-radius: 100%;
+    margin-left: 1em;
+}
+
+@media screen and (max-width: 480px) {
+    main.contact h1#heading{
+        font-size: 8vw;
+    }
+    main.contact .contact-section{
+        flex-direction: column;
+        margin: 2vw;
+        align-items: center;
+        width: 100vw;
+    }
+    main.contact .contact-section .left-col{
+        margin: 0 2vw;
+        padding: 0;
+        width: 90vw;
+    }
+ 
+    main.contact .contact-section .right-col h2{
+        font-size: 6vw;
+    }
+    main.contact .contact-section .left-col input,main.contact .contact-section .left-col textarea{
+        width: 30vw;
+    }
+    main.contact .contact-section .right-col{
+        width: 80vw;
+        margin-bottom: 5em;
+        padding-bottom: 3em;
+
+    }
+    main.contact .contact-section .left-col input{
+        width: 60vw;
+        height: 10vw;
+        font-size: 3vw;
+    }
+    main.contact .contact-section .left-col label{
+        font-size: 4vw;
+        margin-left: -28vw;
+        margin-top: 0;
+    }
+
+.left-col form label{
+    padding-top: 3vw;
+}
+
+
+    main.contact .contact-section .left-col textarea{
+        width: 60vw;
+        font-size:3vw ;
+        margin-left: 0;
+    }
+    main.contact .contact-section .left-col span{
+        width: 70vw;
+        align-items: center;
+    }
+    .left-col form{
+        width: 60vw;
+    }
+    main.contact .contact-section .left-col input#send-button{
+        width: 10em;
+        font-size:3vw;
+        margin-top: 2em;
+        margin-left: -14vw;
+    }
+    main.contact .contact-section .left-col h2{
+        font-size: 6vw;
+    }
+    main.contact .contact-section .left-col label{
+        font-size: 4vw;
+        margin-left: -28vw;
+        margin-top: 0;
+    }
+    main.contact .contact-section .right-col .social-media figure{
+        justify-content: space-evenly;
+        width: 70vw;
+        margin-top: 6vw;
+        
+    }
+    main.contact .contact-section .right-col .contact-info div{
+        width: 15vw;
+        height: 15vw;
+        align-items: center;
+        position: relative;
+        border-radius: 5vw 5vw;
+        justify-content: space-evenly;
+
+    }
+    main.contact .contact-section .right-col .contact-info div .logo{
+        width: 10vw;
+        height: 10vw;
+        position: absolute;
+        top: 2.5vw;
+        left: 2.5vw;
+        
+    }
+    main.contact .contact-section .right-col .contact-info div p{
+        font-size: 3vw;
+        height: 20vw;
+        width: 30vw;    
+        padding-top: 10vw;
+        padding-left: 5vw;
+        
+    }
+    main.contact .contact-section .right-col .social-media .logo{
+        width:10vw;
+        height:10vw;
+    }
+    main.contact .contact-section .right-col .contact-info div:hover{
+        width: 60vw;
+        color: white;
+    }
+
+}

@@ -1,0 +1,122 @@
+/* About page style rules*/
+main.about{
+    margin-top:10vw ;
+}
+main.about section.about-me .content {
+    display: grid;
+    font-size:2vw;
+    margin: 0 2vw;
+}
+
+main.about section.about-me .content .top {
+    display: flex;
+}
+
+main.about section.about-me .content .top .right {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-right:2em;
+    background-color: rgba(255, 255, 255, 0.1);
+    padding-right: 2em;
+    padding-left: 2em;
+    border-radius: 1em;
+}
+
+main.about section.about-me .content .top .right .contact-info {
+    display: grid;
+    height:12em;
+    width:15em;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+main.about section.about-me .content .top .right .contact-info .grid-item {
+    background-color: var(--primary-color);
+    border-radius: 20%;
+    border: 1px solid;
+    height: 10vw;
+    font-size: 0.5em;
+    padding-top: 2em;
+    padding-bottom: 2em;
+    text-align: center;
+}
+.contact-info .grid-item img{
+    width: 5vw;
+    height: 5vw;    
+}
+main.about section.about-me .content .top .left {
+    padding-top:4em;
+}
+
+main.about section.about-me .content .top .left .profile {
+    background-image: url('../images/aboutDecor.svg');
+    background-repeat: no-repeat;
+    background-size: 128% 100%;   
+}
+main.about section.about-me .content .top .left .profile .profile-pic{
+    width:30vw;
+    padding:4em 6em 4em 4em;
+}
+main.about section.about-me .content .bottom p{
+    padding:2em 5em;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 2vw;
+    margin-left: 2vw;
+    margin-right: 2vw;
+}
+@media screen and (max-width: 480px) {
+    .content .top {
+        flex-direction: column;
+    }
+
+    main.about section.about-me .content .top .right{
+        width: 80vw;
+        height: 100vh;
+        align-items: center;
+        margin-left: 2vw;
+        margin-right: 2vw;
+
+    }
+    
+    .content .top .right h2{
+        font-size: 5vw;
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+    .content .top .right p{
+        padding: 0;
+        font-size:4vw ;
+    }
+
+    main.about section.about-me .content .top .left .profile {
+        transform: rotateZ(-90deg);
+    }
+    main.about section.about-me .content .top .left .profile .profile-pic{
+        transform: rotateZ(90deg);
+        padding-left:7em ;
+        padding-top: 10em;
+        width:70vw;
+    }
+    main.about section.about-me .content .bottom p{
+        font-size:4vw ;
+        margin: 2vw 5vw;
+        padding: 5vw;
+        
+    }
+    main.about section.about-me .content .top .right{
+        height: 120vw;
+    }
+    main.about section.about-me .content .top .right .contact-info {
+        width: auto;
+        grid-gap: 2px;
+    }
+    main.about section.about-me .content .top .right .contact-info .grid-item {
+        border-radius: 4vw 4vw;
+        height: 35vw;
+        width: 35vw;
+        padding-top: 0;
+        padding-bottom: 0;
+    }
+
+
+}

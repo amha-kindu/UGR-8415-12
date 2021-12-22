@@ -1,0 +1,149 @@
+/* Education page style rules*/
+.skills p{
+    margin:2em 5em ;
+}
+.educations{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.educations section{
+    display: flex;
+    flex-direction: column;
+    margin: 2vw;
+    border-radius: 2vw;
+    background-color: rgba(255, 255, 255, 0.1);
+    font-size: 2vw;
+    width: 80vw;
+}
+.educations h1{
+    font-size: 4vw;
+}
+
+.skill-level{
+    display: flex;
+    justify-content: space-evenly;
+    margin: 2em 0;
+    
+}
+@keyframes progressAnim{
+    0%{
+        stroke-dasharray: 0vw 46vw;
+    }
+    100%{
+        stroke-dasharray: 23vw 23vw;
+    }
+}
+
+.progress-ring{
+    height: 12vw;
+    width: 12vw;
+}
+.progress-ring__circle{
+    stroke-dasharray: 23vw 23vw;
+    stroke-dashoffset: 4.0vw; 
+    r:4vw;
+    cx:6vw; cy:6vw;
+    animation: progressAnim 1s linear;     
+}
+.progress-ring circle{
+    stroke: var(--primary-color);
+    stroke-width: 0.6vw;
+    fill: var(--secondary-color);
+}
+.skill{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 2vw;
+    box-shadow: 0 0.2vw 0.8vw black;
+    justify-content: space-evenly;
+    background-image: linear-gradient(90deg,black, var(--secondary-color));
+    color: white;
+    font-size: 1.5vw;
+}
+.skill:hover{
+    margin-top: -2em;
+    margin-bottom:-2em;
+    transform: translateX(2em);
+}
+.skill-level{
+    display: grid;
+    grid-gap: 10px;
+    margin-left: 5vw;
+    margin-right: 5vw;
+    grid-template-columns: repeat(auto-fill, minmax(15vw, 1fr) ) ;
+}
+
+.skill-level .skill h3.percentage{
+    color: white;
+    font-weight: bold;
+    position: absolute;
+    top: 2.5vw;
+}
+.skill-level .skill h3.percentage:hover{
+    font-size:1.5em ;
+    top:2.5vw;
+}
+
+table{
+    border-collapse: collapse;
+    margin: 2em 5em;
+    font-size: 1vw;
+    width: 70vw;
+}
+td{
+    background-color: #F2F2F2;
+}
+table th{
+    background-color: #074F70;
+    color: white;
+    text-align: center;
+    letter-spacing: 2px;
+}
+th:first-child, td:first-child{
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+table thead th:last-child, td:last-child{
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+td, th{
+    border: 1px solid var(--secondary-color);
+    padding: 1vw;
+    border: hidden;
+    box-shadow: 1px 2px 3px black;
+
+}
+tr:hover{
+    box-shadow: 5px 2px 6px var(--primary-color);
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+@media screen and (max-width: 480px) {
+    .skills{
+        text-align: center;
+    }
+    .skills p{
+        font-size: 4vw;
+        margin:0 6vw;
+    }
+    .skill-level{
+        display: grid;
+        grid-template-columns: repeat(auto-fit,minmax(20vw, 1fr));
+    }
+    .skill-level .skill{
+        height: 20vw;
+        
+    }
+    table{
+        margin-top: 0;
+        font-size: 3vw;
+    }
+    
+
+
+}
